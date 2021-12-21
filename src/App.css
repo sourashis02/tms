@@ -1,20 +1,26 @@
 .inputFP{
   width: 100vw;
   margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
 }
 .inputFP_child{
   width: 30vw;
+  margin: 0 auto;
 }
 .lbutton{
   margin-top: 3rem;
   width: 15rem;
 }
+
+.control {
+  width: 150px;
+  margin: 0 auto;
+}
+
 html, body{
   height: 100%;
+  margin: 0;
+  padding: 0;
   font-size: 62.5%;
 }
 

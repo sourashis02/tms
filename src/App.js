@@ -15,7 +15,7 @@ function App() {
               <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" />
               <small id="emailHelp" class="form-text text-muted">We'll never share details with anyone else.</small>
             </div>
-            <div>
+            <div className='control'>
               <button type="button" class="btn btn-primary btn-lg lbutton">Submit</button>
             </div>
           </div>
