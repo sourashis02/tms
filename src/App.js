@@ -7,19 +7,16 @@ function App() {
   return (
     <>
       <Header />
-      <form>
-        <fieldset>
-          <div className='inputFP col'>
+      <form className="inputForm">
+          <div className='inputFP'>
             <div className='form-group inputFP_child'>
-              <label for="exampleInputEmail1" class="form-label mt-4">Name</label>
-              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" />
-              <small id="emailHelp" class="form-text text-muted">We'll never share details with anyone else.</small>
+              <input type="name" className="form-control" id="name" placeholder="Enter Your Name" />
+              <small id="nameHelp" className="form-text text-muted">We'll never share details with anyone else.</small>
             </div>
             <div className='control'>
-              <button type="button" class="btn btn-primary btn-lg lbutton">Submit</button>
+              <button type="button" className="btn btn-primary btn-lg lbutton">Submit</button>
             </div>
           </div>
-        </fieldset>
       </form>
       <Footer />
     </>

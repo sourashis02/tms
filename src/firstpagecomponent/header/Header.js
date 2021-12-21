@@ -4,7 +4,7 @@ import '../../bootstrap.min.css'
 
 const Header = () => {
     return (
-        <div>
+        <div className={styles.header}>
             <h1 className={styles.boldHeading}>Talaash</h1>
         </div>
     )

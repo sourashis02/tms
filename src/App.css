@@ -1,47 +1,71 @@
 .inputFP{
-  width: 100vw;
-  margin-top: 10rem;
   font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
+
+.inputForm {
+  display: flex;
+  height: calc(100% - 200px);
+  justify-content: center;
+  align-items: center;
+}
+
 .inputFP_child{
-  width: 30vw;
+  width: 50rem;
   margin: 0 auto;
 }
 .lbutton{
-  margin-top: 3rem;
+  font-size: 2rem;
   width: 15rem;
 }
 
 .control {
   width: 150px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
-
-html, body{
+html {
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-size: 62.5%;
 }
-
-@media only screen and (max-width: 980px) {
-  html{
-    font-size: 44.2%;
-  }
-  .inputFP_child{
-    width: 40vw;
-    margin-top: 10rem;
-  }
-  .lbutton{
-    display: none;
-  }
+body{
+  height: 100%;
 }
-@media only screen and (max-width: 450px){
-  .inputFP_child{
-    width: 70vw;
-    margin-top: 10rem;
+
+.inputFP_child .form-control {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#nameLabel {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 75%;
   }
-  .lbutton{
+
+  .inputFP_child .form-control {
+    font-size: 1.5rem;
+  }
+
+  .inputFP {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 0 2rem;
+    display: flex;
+    width: 100%;
+  }
+
+  .inputFP_child{
+    width: 100%;
+  }
+  .control{
     display: none;
   }
 }
